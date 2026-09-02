@@ -1,0 +1,62 @@
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Funcionalidad de búsqueda simulada
+    const searchInput = document.querySelector(".search input");
+    const searchButton = document.querySelector(".search button");
+
+    const performSearch = () => {
+        const query = searchInput.value.trim();
+        if (query !== "") {
+            alert(`Buscando: "${query}"... (Funcionalidad de búsqueda conectada)`);
+            // Aquí podrías agregar la lógica real para filtrar elementos o redirigir
+        } else {
+            alert("Por favor, introduce un término para buscar.");
+        }
+    };
+
+    if (searchButton && searchInput) {
+        searchButton.addEventListener("click", performSearch);
+        searchInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                performSearch();
+            }
+        });
+    }
+
+    // 2. Simulación de interacción con el botón de Iniciar Sesión
+    const loginButton = document.querySelector(".login");
+    if (loginButton) {
+        loginButton.addEventListener("click", () => {
+            const userAction = prompt("¿Deseas iniciar sesión? Escribe tu correo electrónico:");
+            if (userAction) {
+                alert(`¡Bienvenido de nuevo, ${userAction}! Sesión iniciada con éxito.`);
+                loginButton.textContent = "Mi Cuenta";
+                loginButton.style.backgroundColor = "#059669"; // Cambia a verde para indicar éxito
+            }
+        });
+    }
+
+    // 3. Alerta interactiva al hacer clic en los botones de "Ver noticias"
+    const heroButton = document.querySelector(".hero .primary-button");
+    if (heroButton) {
+        heroButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: document.querySelector(".section").offsetTop - 80,
+                behavior: "smooth"
+            });
+        });
+    }
+
+    // 4. Efecto interactivo en las tarjetas de noticias (consola o animación extra)
+    const newsCards = document.querySelectorAll(".news-card");
+    newsCards.forEach((card, index) => {
+        card.addEventListener("click", () => {
+            const title = card.querySelector("h3").textContent.trim();
+            console.log(`Noticia seleccionada [${index + 1}]: ${title}`);
+            // Simulación de navegación a detalle de la noticia
+            // window.location.href = `noticia-${index + 1}.html`;
+        });
+    });
+});
+
+```
