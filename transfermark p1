@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Market</title>
+    <title>Global Market</title>
     <style>
         :root { 
             --black: #000000; 
@@ -87,7 +87,7 @@
 <body>
     <header>
         <div class="top-bar">
-            <div class="logo">FOOTBALL<span>MARKET</span></div>
+            <div class="logo">GLOBAL<span>MARKET</span></div>
             <div class="search"><input type="text" placeholder="Buscar jugador, club..."><button>🔍</button></div>
             <div class="login">Iniciar sesión</div>
         </div>
@@ -110,9 +110,9 @@
         <section>
             <div class="section-title"><h2>Últimas noticias</h2><a href="#">Ver todas →</a></div>
             <div class="news-grid">
-                <article class="news-card"><div class="news-image">⚽</div><div class="news-content"><span>FICHAJES</span><h3>Máximos históricos en el mercado de verano</h3><p>02/09/2026</p></div></article>
-                <article class="news-card"><div class="news-image">🏆</div><div class="news-content"><span>COMPETICIONES</span><h3>Resúmenes tácticos de la nueva temporada</h3><p>02/09/2026</p></div></article>
-                <article class="news-card"><div class="news-image">📈</div><div class="news-content"><span>VALORES</span><h3>Aumento global en los valores de mercado</h3><p>01/09/2026</p></div></article>
+                <article class="news-card"><div class="news-image">⚽</div><div class="news-content"><span>FICHAJES</span><h3>mayores ventas de la historia </h3><p>02/09/2026</p></div></article>
+                <article class="news-card"><div class="news-image">🏆</div><div class="news-content"><span>COMPETICIONES</span><h3>Resumen de la ultima temporada </h3><p>02/09/2026</p></div></article>
+                <article class="news-card"><div class="news-image">💲</div><div class="news-content"><span>VALORES</span><h3>intereces del mercado de fichajes</h3><p>01/09/2026</p></div></article>
             </div>
         </section>
 
@@ -146,7 +146,7 @@
 
     <footer>
         <div class="footer-links"><a href="#">Acerca de</a><a href="#">Contacto</a><a href="#">Privacidad</a><a href="#">Términos</a></div>
-        <div>© 2026 Football Market. Todos los derechos reservados.</div>
+        <div>© 2026 Global Market. Todos los derechos reservados.</div>
     </footer>
 </body>
 </html>
