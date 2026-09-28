@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo">Global<span>Market</span></div>
+            <div class="search">
+                <input type="text" placeholder="Buscar jugadores, clubes, fichajes...">
+                <button type="button">🔍</button>
+            </div>
+        </div>
+        <nav class="menu">
+            <a href="#">Fichajes</a>
+            <a href="#">mercado</a>
+            <a href="#">Competiciones</a>
+            <a href="#">Clubes</a>
+            <a href="#">Rumores</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- CARRUSEL DE NOTICIAS DE FÚTBOL -->
+        <section class="carousel-section">
+            <div class="carousel-header">
+                <h2>Actualidad del Mercado</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-control-btn" id="prevBtn">❮</button>
+                    <button class="carousel-control-btn" id="nextBtn">❯</button>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <article class="carousel-card">
+                        <div class="carousel-img-container" style="background-image: url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80')">
+                            <span class="carousel-tag">Fichajes</span>
+                        </div>
+                        <div class="carousel-body">
+                            <h3>Los movimientos bomba que sacuden Europa</h3>
+                            <p>Análisis detallado de las incorporaciones estelares y el impacto financiero en las grandes ligas.</p>
+                            <span class="carousel-date">28/09/2026</span>
+                        </div>
+                    </article>
+                    <article class="carousel-card">
+                        <div class="carousel-img-container" style="background-image: url('https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=600&q=80')">
+                            <span class="carousel-tag">Valores</span>
+                        </div>
+                        <div class="carousel-body">
+                            <h3>Actualización masiva de cotizaciones</h3>
+                            <p>Jóvenes promesas multiplican su valor de mercado tras el arranque liguero internacional.</p>
+                            <span class="carousel-date">27/09/2026</span>
+                        </div>
+                    </article>
+                    <article class="carousel-card">
+                        <div class="carousel-img-container" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80')">
+                            <span class="carousel-tag">Exclusiva</span>
+                        </div>
+                        <div class="carousel-body">
+                            <h3>Radiografía financiera de los clubes top</h3>
+                            <p>¿Cómo se posicionan Real Madrid y Manchester City en la cima del ranking de valor de planteles?</p>
+                            <span class="carousel-date">26/09/2026</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>Últimas noticias</h2>
+                <a href="#">Ver todas →</a>
+            </div>
+            <div class="news-grid">
+                <article class="news-card" id="openSalesModal">
+                    <div class="news-image">📊</div>
+                    <div class="news-content">
+                        <span>FICHAJES</span>
+                        <h3>Mayores ventas de la historia</h3>
+                        <p>02/09/2026</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">🏆</div>
+                    <div class="news-content">
+                        <span>COMPETICIONES</span>
+                        <h3>Resumen de la última temporada</h3>
+                        <p>02/09/2026</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">⇄</div>
+                    <div class="news-content">
+                        <span>VALORES</span>
+                        <h3>Intereses del mercado de fichajes</h3>
+                        <p>01/09/2026</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="columns">
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Jugadores más valiosos</h2>
+                    <a href="#">Top 100 →</a>
+                </div>
+                <div class="player"><div class="number">1</div><div class="player-avatar">LY</div><div class="player-info"><strong>Lamine Yamal</strong><small>Extremo der. · Barcelona</small></div><span class="value">€220M</span></div>
+                <div class="player"><div class="number">2</div><div class="player-avatar">EH</div><div class="player-info"><strong>Erling Haaland</strong><small>Delantero · Man City</small></div><span class="value">€220M</span></div>
+                <div class="player"><div class="number">3</div><div class="player-avatar">KM</div><div class="player-info"><strong>Kylian Mbappé</strong><small>Delantero · Real Madrid</small></div><span class="value">€200M</span></div>
+            </section>
+            
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Últimos fichajes</h2>
+                    <a href="#">Todos →</a>
+                </div>
+                <div class="transfer"><div><strong>Yan Diomande</strong><small>Leipzig → Real Madrid</small></div><strong>€125M</strong></div>
+                <div class="transfer"><div><strong>Enzo Fernández</strong><small>Chelsea → Man City</small></div><strong>€145M</strong></div>
+                <div class="transfer"><div><strong>Elliot Anderson</strong><small>Newcastle → Man City</small></div><strong>€135M</strong></div>
+                <div class="transfer"><div><strong>Bradley Barcola</strong><small>PSG → Liverpool</small></div><strong>€125M</strong></div>
+            </section>
+        </div>
+
+        <section class="panel">
+            <div class="panel-header">
+                <h2>Clubes más valiosos</h2>
+                <a href="#">Ranking completo →</a>
+            </div>
+            <table>
+                <thead>
+                    <tr><th>#</th><th>Club</th><th>País</th><th>Plantel</th><th>Valor</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><strong>Real Madrid</strong></td><td>España</td><td>27</td><td class="money">€1.46B</td></tr>
+                    <tr><td>2</td><td><strong>Manchester City</strong></td><td>Inglaterra</td><td>25</td><td class="money">€1.43B</td></tr>
+                    <tr><td>3</td><td><strong>Barcelona</strong></td><td>España</td><td>27</td><td class="money">€1.26B</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Modal con el Top 20 corregido -->
+    <div class="modal-overlay" id="salesModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeSalesModal">&times;</button>
+            <div class="panel-header" style="margin-bottom: 1.5rem;">
+                <h2>Top 20 Mayores Ventas de la Historia del Fútbol</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Jugador</th>
+                        <th>Origen → Destino</th>
+                        <th>Año</th>
+                        <th>Costo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><strong>Neymar</strong></td><td>Barcelona → PSG</td><td>2017</td><td class="money">€222M</td></tr>
+                    <tr><td>2</td><td><strong>Kylian Mbappé</strong></td><td>Monaco → PSG</td><td>2018</td><td class="money">€180M</td></tr>
+                    <tr><td>3</td><td><strong>Ousmane Dembélé</strong></td><td>Borussia Dortmund → Barcelona</td><td>2017</td><td class="money">€148M</td></tr>
+                    <tr><td>4</td><td><strong>Enzo Fernández</strong></td><td>Chelsea → Man City</td><td>2026</td><td class="money">€145M</td></tr>
+                    <tr><td>5</td><td><strong>Alexander Isak</strong></td><td>Newcastle → Liverpool</td><td>2025</td><td class="money">€144M</td></tr>
+                    <tr><td>6</td><td><strong>Florian Wirtz</strong></td><td>B. Leverkusen → Liverpool</td><td>2025</td><td class="money">€140M</td></tr>
+                    <tr><td>7</td><td><strong>João Félix</strong></td><td>Benfica → Atlético de Madrid</td><td>2019</td><td class="money">€117M</td></tr>
+                    <tr><td>8</td><td><strong>Declan Rice</strong></td><td>West Ham → Arsenal</td><td>2023</td><td class="money">€116M</td></tr>
+                    <tr><td>9</td><td><strong>Moisés Caicedo</strong></td><td>Brighton → Chelsea</td><td>2023</td><td class="money">€116M</td></tr>
+                    <tr><td>10</td><td><strong>Romelu Lukaku</strong></td><td>Inter de Milán → Chelsea</td><td>2021</td><td class="money">€115M</td></tr>
+                    <tr><td>11</td><td><strong>Eden Hazard</strong></td><td>Chelsea → Real Madrid</td><td>2019</td><td class="money">€115M</td></tr>
+                    <tr><td>12</td><td><strong>Cristiano Ronaldo</strong></td><td>Real Madrid → Juventus</td><td>2018</td><td class="money">€117M</td></tr>
+                    <tr><td>13</td><td><strong>Ousmane Dembélé</strong></td><td>Borussia Dortmund → Barcelona</td><td>2017</td><td class="money">€105M</td></tr>
+                    <tr><td>14</td><td><strong>Paul Pogba</strong></td><td>Juventus → Manchester United</td><td>2016</td><td class="money">€105M</td></tr>
+                    <tr><td>15</td><td><strong>Jude Bellingham</strong></td><td>Borussia Dortmund → Real Madrid</td><td>2023</td><td class="money">€103M</td></tr>
+                    <tr><td>16</td><td><strong>Harry Kane</strong></td><td>Tottenham → Bayern Múnich</td><td>2023</td><td class="money">€95M</td></tr>
+                    <tr><td>17</td><td><strong>Antony</strong></td><td>Ajax → Manchester United</td><td>2022</td><td class="money">€95M</td></tr>
+                    <tr><td>18</td><td><strong>Harry Maguire</strong></td><td>Leicester City → Manchester United</td><td>2019</td><td class="money">€87M</td></tr>
+                    <tr><td>19</td><td><strong>Matthijs de Ligt</strong></td><td>Ajax → Juventus</td><td>2019</td><td class="money">€85M</td></tr>
+                    <tr><td>20</td><td><strong>Frenkie de Jong</strong></td><td>Ajax → Barcelona</td><td>2019</td><td class="money">€86M</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+        </div>
+        <div>© 2026 Global Market. Todos los derechos reservados.</div>
+    </footer>
+
+    <main>
+    <script>
+        // Lógica del Modal (Mayores ventas)
+        const modal = document.getElementById('salesModal');
+        const openBtn = document.getElementById('openSalesModal');
+        const closeBtn = document.getElementById('closeSalesModal');
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        // Lógica del Carrusel de Noticias
+        const track = document.getElementById('carouselTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const cardWidth = track.querySelector('.carousel-card').offsetWidth + 24; // 24px gap
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const cards = track.querySelectorAll('.carousel-card');
+            if (currentIndex < cards.length - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+    </script>
+</body>
+</html>
