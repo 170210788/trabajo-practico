@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- ===== HEADER / NAVEGACIÓN ===== -->
     <header>
         <div class="top-bar">
             <a href="#inicio" class="logo">Global<span>Market</span></a>
@@ -17,7 +16,6 @@
                 <input type="text" placeholder="Buscar jugadores, clubes, fichajes..." aria-label="Buscar">
                 <button type="button" aria-label="Buscar">🔍</button>
             </div>
-            <!-- Menú de escritorio -->
             <nav class="desktop-nav" aria-label="Navegación principal">
                 <a href="#noticias">Fichajes</a>
                 <a href="#mercado">Mercado</a>
@@ -25,7 +23,6 @@
                 <a href="#clubes">Clubes</a>
                 <a href="#contacto">Contacto</a>
             </nav>
-            <!-- Botón hamburguesa (móvil / tablet) -->
             <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
@@ -41,7 +38,6 @@
 
     <main class="container" id="inicio">
 
-        <!-- ===== HERO ===== -->
         <section class="hero reveal">
             <div class="hero-content">
                 <span class="hero-badge">Temporada 2026/27</span>
@@ -59,7 +55,6 @@
             </div>
         </section>
 
-        <!-- ===== CARRUSEL ===== -->
         <section class="carousel-section reveal">
             <div class="carousel-header">
                 <h2>Actualidad del Mercado</h2>
@@ -124,7 +119,6 @@
             </div>
         </section>
 
-        <!-- ===== TARJETAS DE INFORMACIÓN ===== -->
         <section id="nosotros" class="reveal">
             <div class="section-title">
                 <h2>¿Por qué Global Market?</h2>
@@ -153,7 +147,6 @@
             </div>
         </section>
 
-        <!-- ===== ÚLTIMAS NOTICIAS ===== -->
         <section id="noticias" class="reveal">
             <div class="section-title">
                 <h2>Últimas noticias</h2>
@@ -187,7 +180,6 @@
             </div>
         </section>
 
-        <!-- ===== PANELES: JUGADORES Y FICHAJES ===== -->
         <div class="columns reveal" id="mercado">
             <section class="panel">
                 <div class="panel-header">
@@ -211,7 +203,6 @@
             </section>
         </div>
 
-        <!-- ===== TABLA DE CLUBES ===== -->
         <section class="panel reveal" id="clubes">
             <div class="panel-header">
                 <h2>Clubes más valiosos</h2>
@@ -231,13 +222,12 @@
             </div>
         </section>
 
-        <!-- ===== GALERÍA DE IMÁGENES ===== -->
         <section id="galeria" class="reveal">
             <div class="gallery">
             </div>
         </section>
 
-        <!-- ===== CONTACTO ===== -->
+      
         <section class="contact-section reveal" id="contacto">
             <div class="section-title">
                 <h2>Contacto</h2>
@@ -304,7 +294,7 @@
         </section>
     </main>
 
-    <!-- ===== MODAL: TOP 20 ===== -->
+
     <div class="modal-overlay" id="salesModal">
         <div class="modal-content">
             <button class="close-modal" id="closeSalesModal" type="button" aria-label="Cerrar">&times;</button>
@@ -349,14 +339,12 @@
         <img id="lightboxImg" src="" alt="">
         <p id="lightboxCaption"></p>
     </div>
-
-    <!-- ===== BOTONES FLOTANTES ===== -->
+    
     <div class="floating">
         <button class="fab fab-top" id="backToTop" type="button" aria-label="Volver arriba">↑</button>
         <a class="fab fab-contact" href="#contacto" aria-label="Ir a contacto">💬</a>
     </div>
 
-    <!-- ===== PIE DE PÁGINA ===== -->
     <footer>
         <div class="footer-grid">
             <div class="footer-about">
@@ -406,7 +394,6 @@
     </footer>
 
     <script>
-        // ===== Menú hamburguesa =====
         const menuToggle = document.getElementById('menuToggle');
         const mainMenu = document.getElementById('mainMenu');
 
@@ -425,7 +412,6 @@
         mainMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
         window.addEventListener('resize', () => { if (window.innerWidth > 992) closeMenu(); });
 
-        // ===== Modal (Mayores ventas) =====
         const modal = document.getElementById('salesModal');
         const openBtn = document.getElementById('openSalesModal');
         const closeBtn = document.getElementById('closeSalesModal');
@@ -439,7 +425,6 @@
             if (e.target === modal) modal.classList.remove('active');
         });
 
-        // ===== Lightbox de la galería =====
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightboxImg');
         const lightboxCaption = document.getElementById('lightboxCaption');
@@ -471,7 +456,6 @@
             }
         });
 
-        // ===== Carrusel de noticias =====
         const track = document.getElementById('carouselTrack');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
@@ -497,14 +481,12 @@
         window.addEventListener('resize', updateCarousel);
         updateCarousel();
 
-        // ===== Botón volver arriba =====
         const backToTop = document.getElementById('backToTop');
         window.addEventListener('scroll', () => {
             backToTop.classList.toggle('show', window.scrollY > 400);
         });
         backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-        // ===== Validación del formulario de contacto =====
         const form = document.getElementById('contactForm');
         const success = document.getElementById('formSuccess');
 
@@ -531,7 +513,6 @@
             }
         });
 
-        // ===== Animación de aparición al hacer scroll =====
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
