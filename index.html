@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- ===== HEADER / NAVEGACIÓN ===== -->
     <header>
         <div class="top-bar">
             <a href="#inicio" class="logo">Global<span>Market</span></a>
@@ -16,13 +17,16 @@
                 <input type="text" placeholder="Buscar jugadores, clubes, fichajes..." aria-label="Buscar">
                 <button type="button" aria-label="Buscar">🔍</button>
             </div>
+            <!-- Menú de escritorio -->
             <nav class="desktop-nav" aria-label="Navegación principal">
                 <a href="#noticias">Fichajes</a>
                 <a href="#mercado">Mercado</a>
-                <a href="#galeria">Galería</a>
+                <a href="#tienda">Tienda</a>
+                <a href="#juego">Juego</a>
                 <a href="#clubes">Clubes</a>
                 <a href="#contacto">Contacto</a>
             </nav>
+            <!-- Botón hamburguesa (móvil / tablet) -->
             <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
@@ -30,7 +34,8 @@
         <nav class="menu" id="mainMenu" aria-label="Menú móvil">
             <a href="#noticias">Fichajes</a>
             <a href="#mercado">Mercado</a>
-            <a href="#galeria">Galería</a>
+            <a href="#tienda">Tienda</a>
+            <a href="#juego">Juego</a>
             <a href="#clubes">Clubes</a>
             <a href="#contacto">Contacto</a>
         </nav>
@@ -38,6 +43,7 @@
 
     <main class="container" id="inicio">
 
+        <!-- ===== HERO ===== -->
         <section class="hero reveal">
             <div class="hero-content">
                 <span class="hero-badge">Temporada 2026/27</span>
@@ -55,6 +61,7 @@
             </div>
         </section>
 
+        <!-- ===== CARRUSEL ===== -->
         <section class="carousel-section reveal">
             <div class="carousel-header">
                 <h2>Actualidad del Mercado</h2>
@@ -119,34 +126,7 @@
             </div>
         </section>
 
-        <section id="nosotros" class="reveal">
-            <div class="section-title">
-                <h2>¿Por qué Global Market?</h2>
-            </div>
-            <div class="info-grid">
-                <article class="info-card">
-                    <div class="info-icon">📈</div>
-                    <h3>Valores en tiempo real</h3>
-                    <p>Seguimiento constante de las cotizaciones de jugadores y clubes en las principales ligas.</p>
-                </article>
-                <article class="info-card">
-                    <div class="info-icon">🔄</div>
-                    <h3>Fichajes al día</h3>
-                    <p>Todos los traspasos, cesiones y rumores del mercado organizados en un solo lugar.</p>
-                </article>
-                <article class="info-card">
-                    <div class="info-icon">🏆</div>
-                    <h3>Rankings completos</h3>
-                    <p>Los clubes y jugadores más valiosos, con datos históricos y comparativas claras.</p>
-                </article>
-                <article class="info-card">
-                    <div class="info-icon">🌍</div>
-                    <h3>Alcance mundial</h3>
-                    <p>Cobertura de competiciones de Europa, Sudamérica y el resto del mundo.</p>
-                </article>
-            </div>
-        </section>
-
+        <!-- ===== ÚLTIMAS NOTICIAS ===== -->
         <section id="noticias" class="reveal">
             <div class="section-title">
                 <h2>Últimas noticias</h2>
@@ -180,6 +160,7 @@
             </div>
         </section>
 
+        <!-- ===== PANELES: JUGADORES Y FICHAJES ===== -->
         <div class="columns reveal" id="mercado">
             <section class="panel">
                 <div class="panel-header">
@@ -203,6 +184,7 @@
             </section>
         </div>
 
+        <!-- ===== TABLA DE CLUBES ===== -->
         <section class="panel reveal" id="clubes">
             <div class="panel-header">
                 <h2>Clubes más valiosos</h2>
@@ -222,12 +204,9 @@
             </div>
         </section>
 
-        <section id="galeria" class="reveal">
-            <div class="gallery">
-            </div>
-        </section>
+        <!-- Las secciones "Tienda" y "Juego" se insertan aquí desde el script (antes de Contacto) -->
 
-      
+        <!-- ===== CONTACTO ===== -->
         <section class="contact-section reveal" id="contacto">
             <div class="section-title">
                 <h2>Contacto</h2>
@@ -294,7 +273,7 @@
         </section>
     </main>
 
-
+    <!-- ===== MODAL: TOP 20 ===== -->
     <div class="modal-overlay" id="salesModal">
         <div class="modal-content">
             <button class="close-modal" id="closeSalesModal" type="button" aria-label="Cerrar">&times;</button>
@@ -333,18 +312,13 @@
         </div>
     </div>
 
-    <!-- ===== LIGHTBOX DE GALERÍA ===== -->
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-        <button class="close-modal" id="closeLightbox" type="button" aria-label="Cerrar imagen">&times;</button>
-        <img id="lightboxImg" src="" alt="">
-        <p id="lightboxCaption"></p>
-    </div>
-    
+    <!-- ===== BOTONES FLOTANTES (el botón del carrito se agrega desde el script) ===== -->
     <div class="floating">
         <button class="fab fab-top" id="backToTop" type="button" aria-label="Volver arriba">↑</button>
         <a class="fab fab-contact" href="#contacto" aria-label="Ir a contacto">💬</a>
     </div>
 
+    <!-- ===== PIE DE PÁGINA ===== -->
     <footer>
         <div class="footer-grid">
             <div class="footer-about">
@@ -362,14 +336,13 @@
                 <ul>
                     <li><a href="#noticias">Fichajes</a></li>
                     <li><a href="#mercado">Mercado</a></li>
-                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
                     <li><a href="#clubes">Clubes</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Información</h4>
                 <ul>
-                    <li><a href="#nosotros">Acerca de</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#">Privacidad</a></li>
                     <li><a href="#">Términos</a></li>
@@ -394,6 +367,7 @@
     </footer>
 
     <script>
+        // ===== Menú hamburguesa =====
         const menuToggle = document.getElementById('menuToggle');
         const mainMenu = document.getElementById('mainMenu');
 
@@ -412,6 +386,7 @@
         mainMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
         window.addEventListener('resize', () => { if (window.innerWidth > 992) closeMenu(); });
 
+        // ===== Modal (Mayores ventas) =====
         const modal = document.getElementById('salesModal');
         const openBtn = document.getElementById('openSalesModal');
         const closeBtn = document.getElementById('closeSalesModal');
@@ -425,37 +400,15 @@
             if (e.target === modal) modal.classList.remove('active');
         });
 
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        const lightboxCaption = document.getElementById('lightboxCaption');
-
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const img = item.querySelector('img');
-                lightboxImg.src = img.src;
-                lightboxImg.alt = img.alt;
-                lightboxCaption.textContent = item.querySelector('.gallery-caption').textContent;
-                lightbox.classList.add('active');
-                lightbox.setAttribute('aria-hidden', 'false');
-            });
-        });
-
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            lightbox.setAttribute('aria-hidden', 'true');
-        }
-        document.getElementById('closeLightbox').addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-
         // Cerrar con la tecla Escape
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 modal.classList.remove('active');
-                closeLightbox();
                 closeMenu();
             }
         });
 
+        // ===== Carrusel de noticias =====
         const track = document.getElementById('carouselTrack');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
@@ -481,12 +434,14 @@
         window.addEventListener('resize', updateCarousel);
         updateCarousel();
 
+        // ===== Botón volver arriba =====
         const backToTop = document.getElementById('backToTop');
         window.addEventListener('scroll', () => {
             backToTop.classList.toggle('show', window.scrollY > 400);
         });
         backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+        // ===== Validación del formulario de contacto =====
         const form = document.getElementById('contactForm');
         const success = document.getElementById('formSuccess');
 
@@ -510,9 +465,13 @@
                 // Aquí se conectaría con un servidor / servicio de correo
                 success.classList.add('show');
                 form.reset();
+                toast('✅ Mensaje enviado');
+            } else {
+                toast('⚠️ Revisá los campos del formulario');
             }
         });
 
+        // ===== Animación de aparición al hacer scroll =====
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -522,6 +481,209 @@
             });
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // =====================================================
+        //  EXTRAS: mensajes, contador,
+        //  tienda + carrito (localStorage) y minijuego
+        // =====================================================
+
+        // ---------- Utilidades ----------
+        const fmtEUR = n => '€' + n.toLocaleString('es-AR');
+        const saveLS = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+        const loadLS = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch (e) { return d; } };
+
+        // ---------- Mensajes (toasts) ----------
+        const toastWrap = document.createElement('div');
+        toastWrap.className = 'toast-wrap';
+        toastWrap.setAttribute('role', 'status');
+        document.body.appendChild(toastWrap);
+
+        function toast(msg) {
+            const t = document.createElement('div');
+            t.className = 'toast';
+            t.textContent = msg;
+            toastWrap.appendChild(t);
+            setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 300); }, 2500);
+        }
+
+        // ---------- Contador que aumenta automáticamente (hero) ----------
+        document.querySelectorAll('.hero-stats strong').forEach(el => {
+            const raw = el.textContent.trim();
+            const digits = raw.replace(/\D/g, '');
+            if (!digits) return;                       // "Diario" no se anima
+            const target = parseInt(digits, 10);
+            const prefix = raw.startsWith('+') ? '+' : '';
+            let started = false;
+            const run = () => {
+                if (started) return; started = true;
+                const dur = 1800, t0 = performance.now();
+                (function step(now) {
+                    const p = Math.min((now - t0) / dur, 1);
+                    el.textContent = prefix + Math.round(target * p).toLocaleString('es-AR');
+                    if (p < 1) requestAnimationFrame(step);
+                })(t0);
+            };
+            new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { run(); o.disconnect(); } }).observe(el);
+        });
+
+        // ---------- Helper para crear secciones (se insertan antes de Contacto) ----------
+        const anchor = document.getElementById('contacto');
+        function makeSection(id, title, html) {
+            const s = document.createElement('section');
+            s.id = id;
+            s.className = 'reveal visible';
+            s.innerHTML = `<div class="section-title"><h2>${title}</h2></div>${html}`;
+            anchor.parentNode.insertBefore(s, anchor);
+            return s;
+        }
+
+        // ---------- Tienda + carrito con localStorage ----------
+        const products = [
+            { id: 1, emoji: '👕', name: 'Camiseta oficial', price: 90 },
+            { id: 2, emoji: '⚽', name: 'Pelota de partido', price: 45 },
+            { id: 3, emoji: '🧤', name: 'Guantes de arquero', price: 60 },
+            { id: 4, emoji: '🧣', name: 'Bufanda de hincha', price: 25 }
+        ];
+        makeSection('tienda', 'Tienda oficial', `
+            <div class="shop-grid">${products.map(p => `
+                <article class="product">
+                    <div class="emoji">${p.emoji}</div>
+                    <h3>${p.name}</h3>
+                    <span class="price">${fmtEUR(p.price)}</span>
+                    <button class="btn btn-primary btn-block" type="button" data-add="${p.id}">Agregar al carrito</button>
+                </article>`).join('')}
+            </div>`);
+
+        // Carrito guardado: { id: cantidad }
+        let cart = loadLS('gm_cart', {});
+
+        const drawer = document.createElement('aside');
+        drawer.className = 'cart-drawer';
+        drawer.setAttribute('aria-label', 'Carrito de compras');
+        drawer.innerHTML = `
+            <div class="cart-head"><h2>🛒 Tu carrito</h2><button class="close-modal" id="cartClose" type="button" aria-label="Cerrar carrito" style="position:static">&times;</button></div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-total"><span>Total</span><span id="cartTotal">€0</span></div>
+            <button class="btn btn-primary btn-block" id="cartBuy" type="button">Finalizar compra</button>
+            <button class="btn btn-outline btn-block" id="cartClear" type="button" style="margin-top:.5rem">Vaciar carrito</button>`;
+        document.body.appendChild(drawer);
+
+        const cartFab = document.createElement('button');
+        cartFab.className = 'fab fab-cart';
+        cartFab.type = 'button';
+        cartFab.setAttribute('aria-label', 'Abrir carrito');
+        cartFab.innerHTML = '🛒<span class="cart-badge" id="cartBadge">0</span>';
+        document.querySelector('.floating').prepend(cartFab);
+
+        const itemsEl = drawer.querySelector('#cartItems');
+        const badge = cartFab.querySelector('#cartBadge');
+
+        function renderCart() {
+            const ids = Object.keys(cart).filter(id => products.some(p => p.id == id));
+            let total = 0, count = 0;
+            itemsEl.innerHTML = ids.length ? '' : '<p class="cart-empty">Tu carrito está vacío.</p>';
+            ids.forEach(id => {
+                const p = products.find(x => x.id == id), q = cart[id];
+                total += p.price * q; count += q;
+                const row = document.createElement('div');
+                row.className = 'cart-row';
+                row.innerHTML = `<span class="name">${p.emoji} ${p.name}<br><small>${fmtEUR(p.price)} c/u</small></span>
+                    <button type="button" data-dec="${id}" aria-label="Quitar uno">−</button>
+                    <strong>${q}</strong>
+                    <button type="button" data-inc="${id}" aria-label="Agregar uno">+</button>`;
+                itemsEl.appendChild(row);
+            });
+            drawer.querySelector('#cartTotal').textContent = fmtEUR(total);
+            badge.textContent = count;
+            badge.classList.remove('bump'); void badge.offsetWidth; badge.classList.add('bump');
+            saveLS('gm_cart', cart);               // persiste al recargar la página
+        }
+
+        document.addEventListener('click', e => {
+            const add = e.target.closest('[data-add]');
+            if (add) {
+                const id = add.dataset.add;
+                cart[id] = (cart[id] || 0) + 1;
+                renderCart();
+                toast('🛒 ' + products.find(p => p.id == id).name + ' agregado');
+            }
+            const inc = e.target.closest('[data-inc]');
+            if (inc) { cart[inc.dataset.inc]++; renderCart(); }
+            const dec = e.target.closest('[data-dec]');
+            if (dec) {
+                const id = dec.dataset.dec;
+                if (--cart[id] <= 0) delete cart[id];
+                renderCart();
+            }
+        });
+        cartFab.addEventListener('click', () => drawer.classList.toggle('open'));
+        drawer.querySelector('#cartClose').addEventListener('click', () => drawer.classList.remove('open'));
+        drawer.querySelector('#cartClear').addEventListener('click', () => { cart = {}; renderCart(); toast('Carrito vaciado'); });
+        drawer.querySelector('#cartBuy').addEventListener('click', () => {
+            if (!Object.keys(cart).length) return toast('⚠️ Agregá productos primero');
+            cart = {}; renderCart(); drawer.classList.remove('open');
+            toast('🎉 ¡Gracias por tu compra!');
+        });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') drawer.classList.remove('open'); });
+        renderCart();
+
+        // ---------- Minijuego: ¿quién vale más? ----------
+        const players = [
+            ['Lamine Yamal', 'Barcelona', 220], ['Erling Haaland', 'Man City', 220], ['Kylian Mbappé', 'Real Madrid', 200],
+            ['Jude Bellingham', 'Real Madrid', 180], ['Vinícius Jr.', 'Real Madrid', 170], ['Pedri', 'Barcelona', 140],
+            ['Bukayo Saka', 'Arsenal', 130], ['Phil Foden', 'Man City', 120], ['Florian Wirtz', 'Liverpool', 130],
+            ['Rodri', 'Man City', 90], ['Julián Álvarez', 'Atlético', 90], ['Harry Kane', 'Bayern', 80]
+        ];
+        const game = makeSection('juego', 'Juego: ¿quién vale más?', `
+            <div class="game">
+                <div class="game-stats"><div><strong id="gScore">0</strong>Puntos</div><div><strong id="gBest">0</strong>Récord</div></div>
+                <div class="game-duel">
+                    <div class="game-card"><strong id="gA"></strong><small id="gAclub"></small><span class="val" id="gAval"></span></div>
+                    <span>VS</span>
+                    <div class="game-card"><strong id="gB"></strong><small id="gBclub"></small><span class="val" id="gBval">€?</span></div>
+                </div>
+                <div class="game-actions">
+                    <button class="btn btn-primary" type="button" id="gHigher">⬆ Vale más</button>
+                    <button class="btn btn-outline" type="button" id="gLower">⬇ Vale menos</button>
+                </div>
+                <p class="game-msg" id="gMsg" role="status"></p>
+            </div>`);
+
+        const $g = s => game.querySelector(s);
+        let score = 0, best = loadLS('gm_best', 0), gA, gB;
+        $g('#gBest').textContent = best;
+
+        const pickPlayer = ex => { let p; do { p = players[Math.floor(Math.random() * players.length)]; } while (p === ex); return p; };
+        function newRound(keep) {
+            gA = keep || pickPlayer();
+            gB = pickPlayer(gA);
+            $g('#gA').textContent = gA[0]; $g('#gAclub').textContent = gA[1]; $g('#gAval').textContent = '€' + gA[2] + 'M';
+            $g('#gB').textContent = gB[0]; $g('#gBclub').textContent = gB[1]; $g('#gBval').textContent = '€?';
+        }
+        function guess(higher) {
+            $g('#gBval').textContent = '€' + gB[2] + 'M';
+            const correct = gB[2] === gA[2] || (higher ? gB[2] > gA[2] : gB[2] < gA[2]);
+            const msg = $g('#gMsg');
+            if (correct) {
+                score++;
+                msg.textContent = '✅ ¡Correcto!'; msg.className = 'game-msg ok';
+                if (score > best) { best = score; saveLS('gm_best', best); $g('#gBest').textContent = best; }
+                $g('#gScore').textContent = score;
+                setTimeout(() => { msg.textContent = ''; newRound(gB); }, 1100);
+            } else {
+                msg.textContent = '❌ Fallaste. Terminaste con ' + score + ' punto(s).'; msg.className = 'game-msg bad';
+                toast('Fin del juego: ' + score + ' puntos');
+                score = 0; $g('#gScore').textContent = 0;
+                setTimeout(() => { msg.textContent = ''; newRound(); }, 1800);
+            }
+        }
+        let gameLocked = false;
+        [['#gHigher', true], ['#gLower', false]].forEach(([sel, h]) =>
+            $g(sel).addEventListener('click', () => {
+                if (gameLocked) return; gameLocked = true;
+                guess(h); setTimeout(() => { gameLocked = false; }, 1900);
+            }));
+        newRound();
     </script>
 </body>
 </html>
